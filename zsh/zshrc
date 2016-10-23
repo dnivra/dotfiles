@@ -1,0 +1,39 @@
+# Top level zshrc file
+# Symlink this to or load this from $HOME/.zshrc
+
+DOTFILES=$HOME/dotfiles/zsh
+
+# Load oh-my-zsh configuration
+source $DOTFILES/oh-my-zsh.zsh
+
+# Load oh-my-zsh overrides
+source $DOTFILES/oh-my-zsh-overrides.zsh
+
+# Customize to your needs...
+export PATH=$PATH:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games
+# Enable pattern based rename
+autoload zmv
+# Enable automatic changing to entered directory
+setopt AUTO_CD
+# Setting locale as Unicode
+export LC_ALL=en_US.UTF-8
+export LANG=en_US.UTF-8
+
+# Load utility functions
+source $DOTFILES/utils.zsh
+
+# Load theme
+source $DOTFILES/mine.zsh-theme
+
+# Load custom aliases
+source $DOTFILES/aliases.zsh
+
+# sagetex related
+export TEXINPUTS="/usr/lib/sagemath/local/share/texmf//:"
+
+# virtualenvwrapper related
+export WORKON_HOME=
+source /usr/local/bin/virtualenvwrapper.sh
+
+# set TERM variable for neovim
+export TERM=xterm-256color

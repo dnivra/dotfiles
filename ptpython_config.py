@@ -15,6 +15,7 @@ def configure(repl):
     repl.enable_auto_suggest = True
     repl.enable_mouse_support = False
     repl.enable_open_in_editor = True
+    repl.highlight_matching_parenthesis = True
     repl.insert_blank_line_after_output = False
     repl.true_color = True
     repl.use_code_colorscheme('fruity')

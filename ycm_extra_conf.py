@@ -20,12 +20,14 @@ generalflags = [
 
 # C language specific flags
 cflags = [
+    '-x', 'c',
     '-Wc99-compat',
     '-std=c99',
     '-I/usr/include',
 ]
 
 cppflags = [
+    '-x', 'c++',
     '-std=c++11',
 ]
 

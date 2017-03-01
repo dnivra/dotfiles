@@ -52,7 +52,6 @@ then
     echo "Please set both git_name and git_email variables in install script and re-run it"
     exit
 fi
-exit
 
 # Save backups to $HOME/backups/$epoch
 epoch=$(date +%s)
